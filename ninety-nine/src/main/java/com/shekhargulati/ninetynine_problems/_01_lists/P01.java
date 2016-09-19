@@ -17,6 +17,9 @@ public class P01 {
      */
     public static <T> T last(List<T> elements) {
         int numberOfElements = elements.size();
+        if(numberOfElements<1){
+        	return null;
+        }
         return elements.get(numberOfElements - 1);
     }
 
